@@ -5,6 +5,8 @@ timezone: Asia/Tokyo
 title: SASAの日記
 tagline: メタバースで儲けたい
 url: ''
+google_analytics:
+  id: 'G-50EC3S0M27'
 author: fullsat
 github:
   username: fullsat
