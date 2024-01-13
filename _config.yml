@@ -22,7 +22,6 @@ paginate: 5
 markdown: kramdown
 
 # ------------ The following options are not recommended to be modified ------------------
-
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
@@ -96,10 +95,9 @@ exclude:
   - Dockerfile
 
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled: [tags]
   layouts:
     category: category
     tag: tag
   permalinks:
     tag: /tags/:name/
-    category: /categories/:name/

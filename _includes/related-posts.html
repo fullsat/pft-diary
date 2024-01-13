@@ -32,11 +32,13 @@
     {% endif %}
   {% endfor %}
 
+<!--
   {% for category in post.categories %}
     {% if page.categories contains category %}
       {% assign score = score | plus: CATEGORY_SCORE %}
     {% endif %}
   {% endfor %}
+-->
 
   {% if score > 0 %}
     {% capture score_item %}{{ score }}{{ SEPARATOR }}{{ i }}{% endcapture %}

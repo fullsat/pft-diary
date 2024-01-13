@@ -715,7 +715,7 @@ $sidebar-display: "sidebar-display";
 
         a {
           position: relative;
-          left: $cursor-width / 2;
+          left: calc(#{$cursor-width} / 2);
           width: 100%;
         }
 
@@ -741,7 +741,7 @@ $sidebar-display: "sidebar-display";
 
     @for $i from 1 through $tab-count {
       $offset: $tab-count - $i;
-      $top: -$offset * $tab-height + $tab-cursor-height / 2;
+      $top: calc(-#{$offset} * #{$tab-height} + #{$tab-cursor-height} / 2);
 
       @if $i < $tab-count {
         > li.active:nth-child(#{$i}),
@@ -1503,7 +1503,7 @@ $sidebar-display: "sidebar-display";
       }
 
       %profile-ml {
-        margin-left: 4.5rem;
+        margin-left: 2.0rem;
       }
 
       #avatar {
@@ -1537,7 +1537,7 @@ $sidebar-display: "sidebar-display";
     } // .profile-wrapper (min-width: 1650px)
 
     ul {
-      padding-left: 2.5rem;
+      padding-left: 0;
 
       > li:last-child {
         > a {
