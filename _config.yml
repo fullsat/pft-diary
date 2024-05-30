@@ -3,7 +3,7 @@ baseurl: '/pft-diary'
 lang: ja-JP
 timezone: Asia/Tokyo
 title: SASAの日記
-tagline: メタバースで儲けたい
+tagline: KAHO KAWAII/ LILJA KAWAII
 url: ''
 google_analytics:
   id: 'G-50EC3S0M27'
@@ -65,6 +65,12 @@ defaults:
       layout: page
       permalink: /:title/
       dynamic_title: true    # Hide title in mobile screens.
+  -
+    scope:
+      path: _tech
+    values:
+      layout: page
+      permalink: /tech/:title/
 
 sass:
   style: compressed
